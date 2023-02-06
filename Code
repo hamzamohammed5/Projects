@@ -107,7 +107,13 @@ while current_ip != finishing:
          breaking=input("braking and finishing? \n 1 to break \n 0 to try again")
          if breaking == "1" :
             break
-# finishing 
-df=pd.DataFrame(data,columns=C_Names)
-print(df)
-df.to_excel("deg.xlsx")
+try:     
+    # finishing 
+    df=pd.DataFrame(data,columns=C_Names)
+    print(df)
+    df.to_excel("deg.xlsx")
+except:
+    print("close the file ")
+    try_again=input("to try again \n Enter 1")
+    if try_again== "1":
+            df.to_excel("deg.xlsx")
