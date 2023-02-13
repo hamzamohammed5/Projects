@@ -99,7 +99,7 @@ while current_ip != finishing:
             else:
                 degrees.append("ض.ج") 
         except:
-            print("Non exist")        
+            print("Not exist")        
 
         current_ip += 1
     except:
@@ -110,10 +110,14 @@ while current_ip != finishing:
 try:     
     # finishing 
     df=pd.DataFrame(data,columns=C_Names)
+    gr=df["Grade"].value_counts()
+    gr
     print(df)
     df.to_excel("deg.xlsx")
+    gr.to_excel("gr.xlsx")
 except:
     print("close the file ")
     try_again=input("to try again \n Enter 1")
     if try_again== "1":
             df.to_excel("deg.xlsx")
+            gr.to_excel("gr.xlsx")
