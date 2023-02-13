@@ -37,7 +37,7 @@ while current_ip != finishing:
             req2=requests.get(url2).text
 
             # to get the table which contain the student name
-            name_df=pd.read_html(f"http://app1.helwan.edu.eg/EngMatrya/{str(find2)[9:-12]}")
+            name_df=pd.read_html(url2)
             soup2=BeautifulSoup(req2,'html.parser')
             deg=[]
             degrees=[]
@@ -99,7 +99,7 @@ while current_ip != finishing:
             else:
                 degrees.append("ض.ج") 
         except:
-            print('Not exist')        
+            print("Not exist")        
 
         current_ip += 1
     except:
