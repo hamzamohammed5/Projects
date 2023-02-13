@@ -99,7 +99,7 @@ while current_ip != finishing:
             else:
                 degrees.append("ض.ج") 
         except:
-            print("Not exist")        
+            print('Not exist')        
 
         current_ip += 1
     except:
