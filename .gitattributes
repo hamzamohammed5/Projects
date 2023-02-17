@@ -3,4 +3,4 @@
 *.js linguist-detectable=false  
 *.html linguist-detectable=false  
 *.xml linguist-detectable=false   
-*.pythin linguist-detectable=true   
+*.python linguist-detectable=true   
