@@ -99,7 +99,6 @@ try:
     df.sort_values(by = 'Perc.%', ascending=False, inplace=True)
     df.index=np.arange(1,len(data)+1).tolist()
     gr=df["Grade"].value_counts()
-    gr
     print(df)
     df.to_excel("deg.xlsx")
     gr.to_excel("gr.xlsx")
