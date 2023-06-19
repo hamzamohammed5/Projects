@@ -1,0 +1,1 @@
+in this project, I have used pandas, requests,numpy and BeautyfulSoup library from python to scrap the students' degrees from the university website.
